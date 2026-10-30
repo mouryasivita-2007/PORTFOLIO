@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Skills - Sivita Mourya</title>
+
+    <style>
+
+        /* BODY */
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #F8FAFC;
+            color: #475569;
+        }
+
+        /* HEADING */
+        h1 {
+            text-align: center;
+            margin-top: 35px;
+            font-size: 2.5rem;
+            color: #1E293B;
+        }
+
+        /* MAIN SKILLS BOX */
+        .skills {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 35px;
+
+            background-color: #FFFFFF;
+            border-left: 6px solid #2563EB;
+            border-radius: 12px;
+
+            box-shadow: 0 6px 18px rgba(30, 41, 59, 0.12);
+        }
+
+        /* GRID LAYOUT */
+        .skills_grid {
+            display: grid;
+
+            grid-template-columns: repeat(4, 1fr);
+
+            gap: 20px;
+        }
+
+        /* INDIVIDUAL SKILL CARD */
+        .skill_card {
+            background-color: #F8FAFC;
+
+            border: 1px solid #CBD5E1;
+            border-radius: 10px;
+
+            padding: 22px 10px;
+
+            text-align: center;
+
+            font-size: 16px;
+            font-weight: 600;
+            color: #1E293B;
+
+            box-shadow: 0 3px 8px rgba(30, 41, 59, 0.08);
+
+            transition: transform 0.3s ease,
+                        box-shadow 0.3s ease,
+                        border-color 0.3s ease;
+        }
+
+        /* HOVER EFFECT */
+        .skill_card:hover {
+            transform: translateY(-4px);
+
+            box-shadow: 0 7px 16px rgba(30, 41, 59, 0.15);
+
+            border-color: #2563EB;
+        }
+
+        /* TABLET */
+        @media (max-width: 768px) {
+
+            .skills {
+                margin: 20px;
+                padding: 25px;
+            }
+
+            .skills_grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+
+        /* MOBILE */
+        @media (max-width: 480px) {
+
+            .skills {
+                padding: 20px;
+            }
+
+            .skills_grid {
+                grid-template-columns: 1fr;
+            }
+
+            .skill_card {
+                padding: 18px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Skills - Sivita Mourya</h1>
+
+    <div class="skills">
+
+        <div class="skills_grid">
+
+            <div class="skill_card">Python</div>
+
+            <div class="skill_card">Java</div>
+
+            <div class="skill_card">C++</div>
+
+            <div class="skill_card">JavaScript</div>
+
+            <div class="skill_card">HTML</div>
+
+            <div class="skill_card">CSS</div>
+
+            <div class="skill_card">Flask</div>
+
+            <div class="skill_card">SQL</div>
+
+            <div class="skill_card">Git</div>
+
+            <div class="skill_card">GitHub</div>
+
+            <div class="skill_card">VS Code</div>
+
+            <div class="skill_card">Android Studio</div>
+
+            <div class="skill_card">Machine Learning</div>
+
+            <div class="skill_card">MS Excel</div>
+
+            <div class="skill_card">SSIS</div>
+
+            <div class="skill_card">SSMS</div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

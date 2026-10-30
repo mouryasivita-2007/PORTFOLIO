@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Me - Sivita Mourya</title>
+
+    <style>
+
+        /* BODY */
+        body {
+            margin: 0;
+            background-color: #F8FAFC;
+            color: #475569;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* MAIN HEADING */
+        h1 {
+            text-align: center;
+            margin: 35px 15px 10px;
+            font-size: 2.5rem;
+            color: #1E293B;
+        }
+
+        /* SUBTITLE */
+        .subtitle {
+            text-align: center;
+            font-size: 16px;
+            color: #64748B;
+            margin: 0 15px 30px;
+        }
+
+        /* MAIN CONTACT CONTAINER */
+        .contact-container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 30px;
+
+            background-color: #FFFFFF;
+            border-left: 6px solid #2563EB;
+            border-radius: 12px;
+
+            box-shadow: 0 6px 18px rgba(30, 41, 59, 0.12);
+        }
+
+        /* CONTACT GRID */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 20px;
+        }
+
+        /* INDIVIDUAL CONTACT CARD */
+        .contact-card {
+            background-color: #F8FAFC;
+            border: 1px solid #CBD5E1;
+            border-radius: 10px;
+
+            padding: 25px 15px;
+            text-align: center;
+
+            box-shadow: 0 3px 8px rgba(30, 41, 59, 0.08);
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            transition: transform 0.3s ease,
+                        box-shadow 0.3s ease,
+                        border-color 0.3s ease;
+        }
+
+        /* CARD HOVER */
+        .contact-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 7px 16px rgba(30, 41, 59, 0.15);
+            border-color: #2563EB;
+        }
+
+        /* ICON */
+        .contact-icon {
+            font-size: 35px;
+            margin-bottom: 12px;
+        }
+
+        /* CONTACT TITLE */
+        .contact-card h2 {
+            font-size: 1.3rem;
+            color: #1E293B;
+            margin: 0 0 12px;
+        }
+
+        /* CONTACT DETAILS */
+        .contact-card p {
+            font-size: 14px;
+            color: #64748B;
+            margin: 0 0 20px;
+            overflow-wrap: anywhere;
+        }
+
+        /* CONTACT BUTTON */
+        .contact-button {
+            display: inline-block;
+            background-color: #2563EB;
+            color: #FFFFFF;
+
+            padding: 10px 16px;
+            border-radius: 6px;
+
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+
+            margin-top: auto;
+
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-button:hover {
+            background-color: #1D4ED8;
+        }
+
+        /* TABLET */
+        @media (max-width: 900px) {
+
+            .contact-container {
+                margin: 20px;
+                padding: 25px;
+            }
+
+            .contact-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+        }
+
+        /* MOBILE */
+        @media (max-width: 600px) {
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .contact-container {
+                padding: 20px;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-card {
+                padding: 25px;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Contact Me</h1>
+
+    <p class="subtitle">
+        Feel free to connect with me!
+    </p>
+
+    <section class="contact-container">
+
+        <div class="contact-grid">
+
+            <!-- EMAIL -->
+            <div class="contact-card">
+
+                <div class="contact-icon">📧</div>
+
+                <h2>Email</h2>
+
+                <p>mauryasivita@gmail.com</p>
+
+                <a href="mailto:mauryasivita@gmail.com"
+                   class="contact-button">
+                    Send Email
+                </a>
+
+            </div>
+
+
+            <!-- GITHUB -->
+            <div class="contact-card">
+
+                <div class="contact-icon">💻</div>
+
+                <h2>GitHub</h2>
+
+                <p>mouryasivita-2007</p>
+
+                <a href="https://github.com/mouryasivita-2007"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="contact-button">
+                    Visit GitHub
+                </a>
+
+            </div>
+
+
+            <!-- LINKEDIN -->
+            <div class="contact-card">
+
+                <div class="contact-icon">💼</div>
+
+                <h2>LinkedIn</h2>
+
+                <p>Sivita Mourya</p>
+
+                <a href="https://www.linkedin.com/in/sivita-mourya-4407ab39b"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="contact-button">
+                    Visit LinkedIn
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+</html>

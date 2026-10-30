@@ -1,0 +1,587 @@
+/* ===================================
+   BODY
+=================================== */
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #F8FAFC;
+    color: #1E293B;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* ===================================
+   HEADER
+=================================== */
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 18px 30px;
+    background-color: #FFFFFF;
+
+    border-bottom: 2px solid #CBD5E1;
+    box-shadow: 0 4px 12px rgba(30, 41, 59, 0.10);
+
+    gap: 25px;
+}
+
+
+/* ===================================
+   LOGO
+=================================== */
+
+#_logo {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+
+/* ===================================
+   LOGO, NAME AND TAGLINE
+=================================== */
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-shrink: 0;
+}
+
+
+/* NAME AND TAGLINE CONTAINER */
+
+.name_section {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+/* NAME */
+
+.name_section h1 {
+    margin: 0;
+    font-size: 28px;
+    font-style: italic;
+    color: #1E293B;
+}
+
+
+/* TAGLINE */
+
+.name_section h4 {
+    margin: 0;
+    font-size: 12px;
+    font-style: italic;
+    color: #64748B;
+    max-width: 320px;
+    line-height: 1.5;
+}
+
+
+/* ===================================
+   NAVIGATION
+=================================== */
+
+.button_designing {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 10px;
+    margin-left: auto;
+}
+
+
+/* NAVIGATION BUTTONS */
+
+.button_designing button {
+    background-color: #1E293B;
+    color: #FFFFFF;
+
+    padding: 9px 12px;
+    border: none;
+    border-radius: 6px;
+
+    font-size: 12px;
+    cursor: pointer;
+
+    box-shadow: 0 3px 7px rgba(30, 41, 59, 0.15);
+
+    transition: background-color 0.3s ease,
+                box-shadow 0.3s ease,
+                transform 0.3s ease;
+}
+
+
+/* NAVIGATION BUTTON HOVER */
+
+.button_designing button:hover {
+    background-color: #2563EB;
+
+    box-shadow: 0 5px 12px rgba(37, 99, 235, 0.25);
+
+    transform: translateY(-2px);
+}
+
+
+/* ===================================
+   MAIN CONTAINER
+=================================== */
+
+.main_container {
+    display: grid;
+    grid-template-columns: 350px minmax(0, 1fr);
+
+    gap: 40px;
+    padding: 50px;
+
+    margin: 0 auto;
+    max-width: 1500px;
+
+    box-sizing: border-box;
+    align-items: start;
+}
+
+
+/* ===================================
+   LEFT PROFILE SECTION
+=================================== */
+
+.about_section {
+    width: 100%;
+    height: auto;
+
+    padding: 20px;
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid #CBD5E1;
+    border-radius: 15px;
+
+    box-shadow: 0 6px 18px rgba(30, 41, 59, 0.12);
+
+    transition: box-shadow 0.3s ease,
+                transform 0.3s ease;
+}
+
+
+/* PROFILE SECTION HOVER */
+
+.about_section:hover {
+    box-shadow: 0 10px 25px rgba(30, 41, 59, 0.18);
+    transform: translateY(-3px);
+}
+
+
+/* PROFILE HEADING */
+
+.about_section h1 {
+    color: #1E293B;
+    font-size: 28px;
+}
+
+
+/* ===================================
+   PROFILE PHOTO
+=================================== */
+
+#photo {
+    display: block;
+
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+
+    padding: 0;
+    margin-top: 20px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ===================================
+   SOCIAL MEDIA ICONS
+=================================== */
+
+.socials {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+
+/* SOCIAL ICON IMAGES */
+
+.socials img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+
+    transition: transform 0.3s ease;
+}
+
+
+/* SOCIAL ICON HOVER */
+
+.socials img:hover {
+    transform: scale(1.1);
+}
+
+
+/* ===================================
+   RIGHT ABOUT SECTION
+=================================== */
+
+.main_section {
+    width: 100%;
+    height: auto;
+
+    padding: 30px 40px;
+    box-sizing: border-box;
+
+    background-color: #FFFFFF;
+    color: #475569;
+
+    border: 1px solid #CBD5E1;
+    border-radius: 15px;
+
+    box-shadow: 0 6px 18px rgba(30, 41, 59, 0.12);
+
+    transition: box-shadow 0.3s ease,
+                transform 0.3s ease;
+}
+
+
+/* ABOUT SECTION HOVER */
+
+.main_section:hover {
+    box-shadow: 0 10px 25px rgba(30, 41, 59, 0.18);
+    transform: translateY(-3px);
+}
+
+
+/* ABOUT ME HEADING */
+
+.main_section h1 {
+    font-size: 32px;
+    color: #1E293B;
+    margin-top: 0;
+}
+
+
+/* ===================================
+   PARAGRAPHS
+=================================== */
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+
+    font-size: 17px;
+    line-height: 1.9;
+
+    color: #475569;
+    margin-bottom: 25px;
+}
+
+
+/* ===================================
+   RESUME BUTTON
+=================================== */
+
+.resume {
+    display: inline-block;
+
+    background-color: #2563EB;
+    color: #FFFFFF;
+
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+
+    box-shadow: 0 3px 8px rgba(37, 99, 235, 0.20);
+
+    transition: background-color 0.3s ease,
+                box-shadow 0.3s ease,
+                transform 0.3s ease;
+}
+
+
+/* RESUME BUTTON HOVER */
+
+.resume:hover {
+    background-color: #1D4ED8;
+
+    box-shadow: 0 6px 14px rgba(37, 99, 235, 0.30);
+
+    transform: translateY(-2px);
+}
+
+
+/* ===================================
+   FOOTER
+=================================== */
+
+footer {
+    background-color: #1E293B;
+    color: #FFFFFF;
+
+    text-align: center;
+    padding: 15px;
+
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+
+/* ===================================
+   RESPONSIVE DESIGN - TABLET
+=================================== */
+
+@media (max-width: 1100px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .left {
+        justify-content: center;
+    }
+
+    .button_designing {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+}
+
+
+/* ===================================
+   RESPONSIVE DESIGN - MOBILE
+=================================== */
+
+@media (max-width: 800px) {
+
+    /* MAIN LAYOUT */
+
+    .main_container {
+        display: flex;
+        flex-direction: column;
+
+        padding: 20px;
+        gap: 25px;
+    }
+
+    /* PROFILE SECTION */
+
+    .about_section {
+        width: 100%;
+        height: auto;
+    }
+
+    /* ABOUT ME SECTION */
+
+    .main_section {
+        width: 100%;
+        height: auto;
+        padding: 25px;
+    }
+
+    .main_section h1 {
+        font-size: 26px;
+    }
+
+    /* PARAGRAPHS */
+
+    p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+}
+
+
+/* ===================================
+   RESPONSIVE DESIGN - SMALL MOBILE
+=================================== */
+
+@media (max-width: 600px) {
+
+    /* HEADER */
+
+    header {
+        padding: 20px 15px;
+    }
+
+    /* LOGO AND NAME */
+
+    .left {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+
+    /* NAME AND TAGLINE */
+
+    .name_section {
+        align-items: center;
+    }
+
+    .name_section h1 {
+        font-size: 25px;
+    }
+
+    .name_section h4 {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    /* NAVIGATION */
+
+    .button_designing {
+        gap: 10px;
+    }
+
+    .button_designing button {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    /* PROFILE PHOTO */
+
+    #photo {
+        max-width: 280px;
+    }
+
+    /* FOOTER */
+
+    footer {
+        font-size: 12px;
+        padding: 12px;
+    }
+
+}
+
+
+/* ===================================
+   ACCESSIBILITY - REDUCED MOTION
+=================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .about_section,
+    .main_section,
+    .button_designing button,
+    .resume,
+    .socials img {
+        transition: none;
+    }
+
+    .about_section:hover,
+    .main_section:hover,
+    .button_designing button:hover,
+    .resume:hover,
+    .socials img:hover {
+        transform: none;
+    }
+
+}
+
+/* ===================================
+   HEADER SPACING
+=================================== */
+
+header {
+    padding: 12px 25px;
+    gap: 15px;
+}
+
+
+/* ===================================
+   NAVIGATION - ORIGINAL BLUE
+=================================== */
+
+.button_designing button {
+    background-color: #2563EB;
+    color: #FFFFFF;
+}
+
+.button_designing button:hover {
+    background-color: #1D4ED8;
+}
+
+
+/* ===================================
+   MAIN CONTENT SPACING
+=================================== */
+
+.main_container {
+    padding: 20px 35px;
+    gap: 25px;
+    align-items: stretch;
+}
+
+
+/* ===================================
+   PROFILE SECTION
+=================================== */
+
+.about_section {
+    height: 100%;
+}
+
+
+/* ===================================
+   ABOUT ME SECTION
+=================================== */
+
+.main_section {
+    height: 100%;
+}
+
+
+/* ===================================
+   FOOTER SPACING
+=================================== */
+
+footer {
+    margin-top: 0;
+    padding: 12px;
+}
+
+
+/* ===================================
+   MOBILE ADJUSTMENTS
+=================================== */
+
+@media (max-width: 800px) {
+
+    .main_container {
+        padding: 15px;
+        gap: 20px;
+    }
+
+    .about_section,
+    .main_section {
+        height: auto;
+    }
+}

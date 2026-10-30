@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Projects - Sivita Mourya</title>
+
+    <style>
+
+        /* BODY */
+        body {
+            margin: 0;
+            background-color: #F8FAFC;
+            color: #475569;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* MAIN HEADING */
+        h1 {
+            text-align: center;
+            margin-top: 35px;
+            font-size: 2.5rem;
+            color: #1E293B;
+        }
+
+        /* MAIN PROJECTS CONTAINER */
+        .projects {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 30px;
+
+            background-color: #FFFFFF;
+            border-left: 6px solid #2563EB;
+            border-radius: 12px;
+
+            box-shadow: 0 6px 18px rgba(30, 41, 59, 0.12);
+        }
+
+        /* PROJECT GRID */
+        .projects_grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 20px;
+        }
+
+        /* INDIVIDUAL PROJECT CARD */
+        .project_card {
+            background-color: #F8FAFC;
+
+            border: 1px solid #CBD5E1;
+            border-radius: 10px;
+
+            padding: 22px;
+
+            box-shadow: 0 3px 8px rgba(30, 41, 59, 0.08);
+
+            display: flex;
+            flex-direction: column;
+
+            transition: transform 0.3s ease,
+                        box-shadow 0.3s ease,
+                        border-color 0.3s ease;
+        }
+
+        /* CARD HOVER */
+        .project_card:hover {
+            transform: translateY(-4px);
+
+            box-shadow: 0 7px 16px rgba(30, 41, 59, 0.15);
+
+            border-color: #2563EB;
+        }
+
+        /* PROJECT TITLE */
+        .project_card h2 {
+            color: #1E293B;
+            font-size: 1.25rem;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        /* PROJECT DESCRIPTION */
+        .project_card p {
+            font-size: 15px;
+            line-height: 1.7;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        /* TECHNOLOGIES */
+        .technologies {
+            font-size: 14px;
+            color: #64748B;
+        }
+
+        /* GITHUB BUTTON */
+        .project_card a {
+            display: inline-block;
+
+            background-color: #2563EB;
+            color: #FFFFFF;
+
+            padding: 9px 15px;
+            border-radius: 6px;
+
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+
+            margin-top: auto;
+            align-self: flex-start;
+
+            transition: background-color 0.3s ease;
+        }
+
+        .project_card a:hover {
+            background-color: #1D4ED8;
+        }
+
+        /* TABLET */
+        @media (max-width: 900px) {
+
+            .projects {
+                margin: 20px;
+                padding: 25px;
+            }
+
+            .projects_grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        /* MOBILE */
+        @media (max-width: 600px) {
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .projects {
+                padding: 20px;
+            }
+
+            .projects_grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Projects - Sivita Mourya</h1>
+
+    <section class="projects">
+
+        <div class="projects_grid">
+
+            <!-- PROJECT 1 -->
+            <div class="project_card">
+
+                <h2>AI Career Recommendation System</h2>
+
+                <p>
+                    Developed a machine learning-based web application
+                    that recommends suitable career paths based on
+                    user skills and interests. The application displays
+                    career recommendations along with prediction probabilities.
+                </p>
+
+                <p class="technologies">
+                    <strong>Technologies:</strong>
+                    Python, Random Forest, Flask, HTML, CSS, JavaScript
+                </p>
+
+                <a href="https://github.com/mouryasivita-2007/AI-Career-Recommendation-Project"
+                   target="_blank" rel="noopener noreferrer">
+                    View on GitHub
+                </a>
+
+            </div>
+
+
+            <!-- PROJECT 2 -->
+            <div class="project_card">
+
+                <h2>ResearchPilot</h2>
+
+                <p>
+                    A research-focused application developed during
+                    the CHRIST University 24 SHIFT Hackathon.
+                    Worked on backend development and AI-related
+                    functionality as part of Team ByteBloom.
+                </p>
+
+                <p class="technologies">
+                    <strong>Technologies:</strong>
+                    AI, Backend Development
+                </p>
+
+                <a href="https://github.com/mouryasivita-2007/ResearchPilot"
+                   target="_blank" rel="noopener noreferrer">
+                    View on GitHub
+                </a>
+
+            </div>
+
+
+            <!-- PROJECT 3 -->
+            <div class="project_card">
+
+                <h2>Number Guessing Game</h2>
+
+                <p>
+                    A simple C++ console game where the player
+                    guesses a randomly generated number within
+                    a range, with hints provided after each guess.
+                </p>
+
+                <p class="technologies">
+                    <strong>Technologies:</strong> C++
+                </p>
+
+                <a href="https://github.com/mouryasivita-2007/CODSOFT-INTERSHIP-Cpp-TASK1"
+                   target="_blank" rel="noopener noreferrer">
+                    View on GitHub
+                </a>
+
+            </div>
+
+
+            <!-- PROJECT 4 -->
+            <div class="project_card">
+
+                <h2>Simple Calculator (C++)</h2>
+
+                <p>
+                    A basic C++ calculator that takes two numbers
+                    as input and performs addition, subtraction,
+                    multiplication, or division based on user selection.
+                </p>
+
+                <p class="technologies">
+                    <strong>Technologies:</strong> C++
+                </p>
+
+                <a href="https://github.com/mouryasivita-2007/CODSOFT-INTERSHIP-Cpp-TASK2"
+                   target="_blank" rel="noopener noreferrer">
+                    View on GitHub
+                </a>
+
+            </div>
+
+
+            <!-- PROJECT 5 -->
+            <div class="project_card">
+
+                <h2>Tic Tac Toe (C++)</h2>
+
+                <p>
+                    A console-based Tic Tac Toe game in C++
+                    where two players play alternately, with
+                    the board updated after each move.
+                </p>
+
+                <p class="technologies">
+                    <strong>Technologies:</strong> C++
+                </p>
+
+                <a href="https://github.com/mouryasivita-2007/CODSOFT-INTERSHIP-Cpp-TASK3"
+                   target="_blank" rel="noopener noreferrer">
+                    View on GitHub
+                </a>
+
+            </div>
+
+
+            <!-- PROJECT 6 -->
+            <div class="project_card">
+
+                <h2>Responsive Landing Page</h2>
+
+                <p>
+                    Designed and developed a responsive landing page
+                    using HTML and CSS to practice webpage styling,
+                    layout design, and responsive web development.
+                </p>
+
+                <p class="technologies">
+                    <strong>Technologies:</strong> HTML, CSS
+                </p>
+
+                <a href="https://github.com/mouryasivita-2007/CODSOFT-INTERSHIP-WEB-DEVELOPMENT-LEVEL-1-TASK-2"
+                   target="_blank" rel="noopener noreferrer">
+                    View on GitHub
+                </a>
+
+            </div>
+
+
+            <!-- PROJECT 7 -->
+            <div class="project_card">
+
+                <h2>Web Calculator</h2>
+
+                <p>
+                    Developed a calculator using HTML, CSS,
+                    and JavaScript that performs basic arithmetic
+                    operations through an interactive interface.
+                </p>
+
+                <p class="technologies">
+                    <strong>Technologies:</strong>
+                    HTML, CSS, JavaScript
+                </p>
+
+                <a href="https://github.com/mouryasivita-2007/CODSOFT-INTERSHIP-WEB-DEVELOPMENT-LEVEL-1-TASK-3"
+                   target="_blank" rel="noopener noreferrer">
+                    View on GitHub
+                </a>
+
+            </div>
+
+        <!-- PROJECT 8 -->
+        <div class="project_card">
+
+            <h2>Student Course Registration System</h2>
+
+            <p>
+                Developed a Java-based Student Course Registration
+                System as part of the CodSoft internship.
+                The project focuses on managing student
+                course registration activities.
+            </p>
+
+            <p class="technologies">
+                <strong>Technologies:</strong> Java
+            </p>
+
+            <a href="https://github.com/mouryasivita-2007/Student-Course-registration-system--Java--Codsoft-Internship"
+            target="_blank"
+            rel="noopener noreferrer">
+                View on GitHub
+            </a>
+
+        </div>
+
+
+        <!-- PROJECT 9 -->
+        <div class="project_card">
+
+            <h2>Quiz Application with Timer</h2>
+
+            <p>
+                Developed an interactive quiz application
+                using Java as part of the CodSoft internship.
+                The application includes a timer to make
+                the quiz experience more engaging.
+            </p>
+
+            <p class="technologies">
+                <strong>Technologies:</strong> Java
+            </p>
+
+            <a href="https://github.com/mouryasivita-2007/Quiz-Application-java-codsoftIntersnhip"
+            target="_blank"
+            rel="noopener noreferrer">
+                View on GitHub
+            </a>
+
+        </div>
+
+
+        <!-- PROJECT 10 -->
+        <div class="project_card">
+
+            <h2>ATM Interface</h2>
+
+            <p>
+                Developed an ATM Interface application using
+                Java as part of the CodSoft internship.
+                The project simulates basic ATM functionality
+                and provides a practical understanding of
+                Java programming concepts.
+            </p>
+
+            <p class="technologies">
+                <strong>Technologies:</strong> Java
+            </p>
+
+            <a href="https://github.com/mouryasivita-2007/Atm-Interface-Project--Java-task-3--CodsoftInternship"
+            target="_blank"
+            rel="noopener noreferrer">
+                View on GitHub
+            </a>
+
+        </div>
+
+        </div>
+
+    </section>
+
+</body>
+</html>

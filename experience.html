@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Experience & Achievements - Sivita Mourya</title>
+
+    <style>
+
+        /* BODY */
+        body {
+            margin: 0;
+            background-color: #F8FAFC;
+            color: #475569;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* MAIN HEADING */
+        h1 {
+            text-align: center;
+            margin: 35px 15px 10px;
+            font-size: 2.5rem;
+            color: #1E293B;
+        }
+
+        /* SUBHEADING */
+        .subtitle {
+            text-align: center;
+            font-size: 16px;
+            color: #64748B;
+            margin: 0 15px 30px;
+        }
+
+        /* MAIN EXPERIENCE CONTAINER */
+        .experience {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 30px;
+
+            background-color: #FFFFFF;
+            border-left: 6px solid #2563EB;
+            border-radius: 12px;
+
+            box-shadow: 0 6px 18px rgba(30, 41, 59, 0.12);
+        }
+
+        /* GRID LAYOUT */
+        .experience_grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 20px;
+        }
+
+        /* INDIVIDUAL EXPERIENCE CARD */
+        .experience_card {
+            background-color: #F8FAFC;
+            border: 1px solid #CBD5E1;
+            border-radius: 10px;
+            padding: 25px;
+
+            box-shadow: 0 3px 8px rgba(30, 41, 59, 0.08);
+
+            display: flex;
+            flex-direction: column;
+
+            transition: transform 0.3s ease,
+                        box-shadow 0.3s ease,
+                        border-color 0.3s ease;
+        }
+
+        /* CARD HOVER */
+        .experience_card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 7px 16px rgba(30, 41, 59, 0.15);
+            border-color: #2563EB;
+        }
+
+        /* CARD TITLE */
+        .experience_card h2 {
+            color: #1E293B;
+            font-size: 1.3rem;
+            margin: 0 0 12px;
+        }
+
+        /* ORGANIZATION */
+        .organization {
+            font-size: 15px;
+            font-weight: 600;
+            color: #2563EB;
+            margin: 0 0 8px;
+        }
+
+        /* DATE */
+        .date {
+            font-size: 14px;
+            color: #64748B;
+            margin: 0 0 15px;
+        }
+
+        /* DESCRIPTION */
+        .description {
+            font-size: 15px;
+            line-height: 1.7;
+            margin: 0 0 20px;
+        }
+
+        /* CERTIFICATE BUTTON */
+        .certificate_button {
+            display: inline-block;
+            background-color: #2563EB;
+            color: #FFFFFF;
+            padding: 10px 16px;
+            border-radius: 6px;
+
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+
+            margin-top: auto;
+            align-self: flex-start;
+
+            transition: background-color 0.3s ease;
+        }
+
+        .certificate_button:hover {
+            background-color: #1D4ED8;
+        }
+
+        /* TABLET */
+        @media (max-width: 900px) {
+
+            .experience {
+                margin: 20px;
+                padding: 25px;
+            }
+
+        }
+
+        /* MOBILE */
+        @media (max-width: 600px) {
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .experience {
+                padding: 20px;
+            }
+
+            .experience_grid {
+                grid-template-columns: 1fr;
+            }
+
+            .experience_card {
+                padding: 20px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Experience & Achievements</h1>
+
+    <p class="subtitle">
+        Internships, Hackathons & Learning Experiences
+    </p>
+
+    <section class="experience">
+
+        <div class="experience_grid">
+
+            <!-- EXPERIENCE 1 -->
+            <div class="experience_card">
+
+                <h2>💻 Web Development Internship</h2>
+
+                <p class="organization">CodSoft</p>
+
+                <p class="date">January 1 – January 31, 2026</p>
+
+                <p class="description">
+                    Completed a virtual internship in Web Development,
+                    working on projects involving HTML, CSS, and
+                    JavaScript. Gained practical experience in
+                    responsive design and frontend development.
+                </p>
+
+                <a href="certificates/web development.jpg"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="certificate_button">
+                    View Certificate
+                </a>
+
+            </div>
+
+
+            <!-- EXPERIENCE 2 -->
+            <div class="experience_card">
+
+                <h2>💻 C++ Programming Internship</h2>
+
+                <p class="organization">CodSoft</p>
+
+                <p class="date">January 5 – February 5, 2026</p>
+
+                <p class="description">
+                    Completed a virtual internship focused on
+                    C++ programming. Developed console-based
+                    applications including a Number Guessing Game,
+                    Calculator, and Tic Tac Toe.
+                </p>
+
+                <a href="certificates/c++.jpg"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="certificate_button">
+                    View Certificate
+                </a>
+
+            </div>
+
+
+            <!-- EXPERIENCE 3 -->
+            <div class="experience_card">
+
+                <h2>🏆 24 SHIFT International Hackathon</h2>
+
+                <p class="organization">CHRIST University</p>
+
+                <p class="date">September 30 – October 1, 2026</p>
+
+                <p class="description">
+                    Participated in the 24 SHIFT International
+                    Hackathon as part of Team ByteBloom.
+                    Worked on ResearchPilot, a research-focused
+                    application, contributing to backend development,
+                    AI-related features, and project planning.
+                </p>
+
+                <a href="certificates/hackathon.jpg"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="certificate_button">
+                    View Certificate
+                </a>
+
+            </div>
+
+
+            <!-- EXPERIENCE 4 -->
+            <div class="experience_card">
+
+                <h2>🎨 Snap AR Lens Hackathon</h2>
+
+                <p class="organization">Snap AR Lens Challenge, Mumbai</p>
+
+                <p class="date">September 2026</p>
+
+                <p class="description">
+                    Participated in a Snapchat AR Lens hackathon
+                    based on the Desi Fusion theme.
+                    Created an interactive lens combining
+                    X-ray effects and rangoli designs,
+                    exploring augmented reality and creativity.
+                </p>
+
+                <a href="certificates/snap.jpg"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="certificate_button">
+                    View Certificate
+                </a>
+
+            </div>
+
+            <!-- EXPERIENCE 5 -->
+            <div class="experience_card">
+
+                <h2>☕ Java Programming Internship</h2>
+
+                <p class="organization">CodSoft</p>
+
+                <p class="date">August 5 - September 5, 2026</p>
+
+                <p class="description">
+                    Completed a Java Programming internship at CodSoft,
+                    developing three practical applications:
+                    Student Course Registration System,
+                    Quiz Application with Timer, and ATM Interface.
+                    Gained hands-on experience in Java programming,
+                    application logic, and problem-solving.
+                </p>
+
+                <a href="YOUR-JAVA-PROJECT-REPOSITORY-LINK"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="certificate_button">
+                    View Projects on GitHub
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+</html>
